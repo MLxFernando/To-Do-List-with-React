@@ -1,2 +1,2 @@
 # WebDeveloper
-First project with react 
+First project with React 
