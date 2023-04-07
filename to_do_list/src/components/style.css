@@ -1,0 +1,239 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.add-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background-color: #1a73e8;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #0c5fce;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.task-item:last-child {
+  border-bottom: none;
+}
+
+.task-item.completed {
+  text-decoration: line-through;
+}
+
+.text {
+  flex-grow: 1;
+}
+
+.actions {
+  display: flex;
+  margin-left: auto;
+}
+
+.edit-button,
+.delete-button,
+.complete-button,
+.save-button,
+.cancel-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 5px;
+}
+
+.edit-button:hover,
+.delete-button:hover,
+.complete-button:hover,
+.save-button:hover,
+.cancel-button:hover {
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.edit-button:hover .MuiSvgIcon-root,
+.delete-button:hover .MuiSvgIcon-root,
+.complete-button:hover .MuiSvgIcon-root,
+.save-button:hover .MuiSvgIcon-root,
+.cancel-button:hover .MuiSvgIcon-root {
+  fill: #1a73e8;
+}
+
+.complete-button.completed .MuiSvgIcon-root {
+  fill: #fff;
+}
+
+.edit-input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.save-button {
+  background-color: #1a73e8;
+  color: #fff;
+  font-weight: bold;
+}
+
+.cancel-button {
+  color: #1a73e8;
+  font-weight: bold;
+}
+
+.cancel-button:hover {
+  color: #0c5fce;
+}
+
+.Icon-root {
+  width: 24px;
+  height: 24px;
+  fill: #555;
+}
+
+.edit-button .Icon-root:hover,
+.delete-button .Icon-root:hover,
+.complete-button .Icon-root:hover {
+  fill: #1a73e8;
+}
+
+.complete-button.completed .Icon-root {
+  fill: #fff;
+}
+
+footer {
+  background-color: #000000;
+  padding: 30px;
+  margin-top: auto;
+  color: white;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.footer-content p {
+  margin: 0;
+  padding: 2px;
+}
+
+.footer-content ul {
+  display: flex;
+  list-style: none;
+  margin: 5px;
+  padding-left: 50px;
+}
+
+.footer-content li {
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #0077c2;
+  transform: scale(1.1);
+}
+
+
+/* Estilos para dispositivos de escritorio */
+.task-list {
+  display: grid;
+  grid-template-columns: 1fr 60px 60px;
+  grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+  gap: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 600px) {
+  .task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: none;
+  }
+
+  .task-item {
+    flex-basis: 100%;
+  }
+
+  .task-item-buttons {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-content ul {
+    margin-top: 10px;
+  }
+}
+
+
