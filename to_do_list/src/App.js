@@ -81,7 +81,7 @@ function App() {
           <p>&copy; 2023 Todos los derechos reservados</p>
           <ul>
             <li>
-              <a href="mail:fernandomacas68@gmail.com">Clic Aquí para contáctarme</a>
+              <a href="mailto:fernandomacas68@gmail.com">Clic Aquí para contáctarme</a>
             </li>
           </ul>
         </div>
