@@ -1,2 +1,2 @@
-# Website To Do List
-First project with React 
+# To Do List
+Primer proyecto realizado en React para entender el uso de componentes, hooks, entre otros.   
