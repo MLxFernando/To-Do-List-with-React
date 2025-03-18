@@ -13,11 +13,11 @@ Este es un proyecto de **Lista de Tareas** desarrollado con **React**, utilizand
 ---
 
 ## 🛠 Tecnologías utilizadas  
-- ⚛️ **React** (Vite)  
-- 🎨 **CSS Module / Tailwind CSS**  
+- ⚛️ **React**   
+- 🎨 **CSS Module / Bootstrap CSS**  
 - 🔄 **React Hooks** (`useState`, `useEffect`)  
 - 🏗 **Componentes reutilizables**  
-- 🌍 **Deploy en Vercel / Netlify (si aplicable)**  
+- 🌍 **Deploy en Netlify**  
 
 ---
 
